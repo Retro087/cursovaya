@@ -1,0 +1,30 @@
+.list{
+    width: 500px;
+    margin: 0 auto;
+    
+}
+
+.btn{
+    width: 150px;
+    height: 35px;
+
+
+}
+
+.btn_wrap{
+    display: flex;
+    justify-content: center ;
+}
+
+.link{
+    width: 150px;
+    height: 35px;
+    background-color: gray;
+
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

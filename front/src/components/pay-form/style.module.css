@@ -1,0 +1,22 @@
+.link{
+    width: 150px;
+    height: 35px;
+    background-color: gray;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.itog{
+    text-align: center;
+    margin: 15px;
+}
+
+.form{
+    width: 800px;
+    margin: 0 auto;
+}

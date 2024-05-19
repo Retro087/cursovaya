@@ -1,0 +1,6 @@
+.item_wrap{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
