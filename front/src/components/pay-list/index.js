@@ -10,7 +10,7 @@ const PayList = (props) => {
   return (
     <div className={s.list}>
       {props.list.map((item, id) => {
-        return <PayItem item={item} />;
+        return <PayItem key={id} item={item} />;
       })}
     </div>
   );

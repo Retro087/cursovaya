@@ -20,3 +20,12 @@
     width: 800px;
     margin: 0 auto;
 }
+
+.btn{
+    width: 100%;
+}
+
+.btn_wrap{
+    width: 150px;
+    margin: 0 auto;
+}

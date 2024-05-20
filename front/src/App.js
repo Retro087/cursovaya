@@ -8,7 +8,6 @@ function App() {
   const [selected, setSelected] = useState([]);
 
   async function getMenu() {
-    console.log("reset");
     await fetch("/menu")
       .then((res) => res.json())
       .then((res) => {
@@ -18,7 +17,6 @@ function App() {
 
   async function addSelect(id) {
     setSelected([...selected, id]);
-    debugger;
   }
   async function removeSelect(id) {
     setSelected(selected.filter((i) => i !== id));
@@ -35,10 +33,16 @@ function App() {
               addSelect={addSelect}
               removeSelect={removeSelect}
               list={menu}
+              selected={selected}
             />
           }
         />
-        <Route path="/pay" element={<Pay menu={menu} selected={selected} />} />
+        <Route
+          path="/pay"
+          element={
+            <Pay setSelected={setSelected} menu={menu} selected={selected} />
+          }
+        />
       </Routes>
     </>
   );

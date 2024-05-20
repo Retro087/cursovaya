@@ -8,7 +8,7 @@ const ArticleItem = (props) => {
         <p>{props.item.structure}</p>
         <p>{props.item.price}</p>
         <p>{props.item.category}</p>
-        {props.item.in_cart == true ? (
+        {props.selected.find((i) => i === props.item.id_menu) ? (
           <button onClick={() => props.removeSelect(props.item.id_menu)}>
             Удалить
           </button>
